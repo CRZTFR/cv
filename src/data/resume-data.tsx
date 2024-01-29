@@ -12,7 +12,7 @@ export const RESUME_DATA = {
     "As a Mechatronics engineer I work well across software and hardware, creating products where the two fields meet.",
   avatarUrl:
     "https://media.licdn.com/dms/image/C4E03AQFzrXwCtJXviA/profile-displayphoto-shrink_800_800/0/1591663650694?e=1710979200&v=beta&t=G8GGGiJqWOwBOUDtRDFCecphxlhdqgE4RUhMpx2ndsE",
-  // personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "https://bindicator.net",
   contact: {
     email: "ccole2107@gmail.com",
     tel: "+61481393901",
