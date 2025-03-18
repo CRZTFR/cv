@@ -8,6 +8,7 @@ import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { RESUME_DATA } from "@/data/resume-data";
 import { ProjectCard } from "@/components/project-card";
+import './globals.css'
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -106,7 +107,10 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
+                      <a 
+                        className="hover:underline print:text-black print:underline" 
+                        href={work.link}
+                      >
                         {work.company}
                       </a>
 
@@ -132,7 +136,7 @@ export default function Page() {
                   </h4>
                 </CardHeader>
                 <CardContent className="mt-2 text-xs">
-                  {work.description}
+                  <div dangerouslySetInnerHTML={{ __html: work.description }} />
                 </CardContent>
               </Card>
             );
@@ -167,7 +171,7 @@ export default function Page() {
           </div>
         </Section>
 
-        <Section className="print-force-new-page scroll-mb-16">
+        <Section className="scroll-mb-16">
           <h2 className="text-xl font-bold">Projects</h2>
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
@@ -178,11 +182,21 @@ export default function Page() {
                   description={project.description}
                   tags={project.techStack}
                   link={"link" in project ? project.link.href : undefined}
+                  className="print:text-black print:underline"
                 />
               );
             })}
           </div>
         </Section>
+
+        {RESUME_DATA.references?.show && (
+          <Section>
+            <h2 className="text-xl font-bold">References</h2>
+            <div className="text-pretty font-mono text-sm text-muted-foreground">
+              {RESUME_DATA.references.text}
+            </div>
+          </Section>
+        )}
       </section>
 
       <CommandMenu

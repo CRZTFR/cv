@@ -75,6 +75,21 @@
   }
 }
 
+@media print {
+  /* Remove the content that shows URLs after links */
+  a[href^="http"]:after,
+  a[href^="mailto:"]:after,
+  a[href^="tel:"]:after {
+    content: "";
+  }
+
+  /* Ensure links remain clickable and visible */
+  a {
+    text-decoration: underline;
+    color: black;
+  }
+}
+
 .print-force-new-page {
   page-break-before: always;
 }

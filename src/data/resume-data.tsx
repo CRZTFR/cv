@@ -9,9 +9,9 @@ export const RESUME_DATA = {
   about:
     "Mechatronics engineer interested in product development and solar PV.",
   summary:
-    "As a Mechatronics engineer I work well across software and hardware, creating products where the two fields meet.",
+    "Dedicated, fast-learning and highly organised mechatronics engineer with a broad range of skills in both software and hardware. Strong set of skills relating to photovoltaic systems.",
   avatarUrl:
-    "https://media.licdn.com/dms/image/C4E03AQFzrXwCtJXviA/profile-displayphoto-shrink_800_800/0/1591663650694?e=1710979200&v=beta&t=G8GGGiJqWOwBOUDtRDFCecphxlhdqgE4RUhMpx2ndsE",
+    "https://media.licdn.com/dms/image/v2/D5603AQHycVjzXtvYHw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1713916342009?e=1747872000&v=beta&t=rV_4cJRSC8ngdR6Fl_xIgAMbgaq9Kdoql89UnnRtU1A",
   personalWebsiteUrl: "https://bindicator.net",
   contact: {
     email: "ccole2107@gmail.com",
@@ -46,13 +46,27 @@ export const RESUME_DATA = {
     {
       company: "ClearVue PV",
       link: "https://clearvuepv.com",
-      badges: ["Remote"],
+      badges: [],
       title: "Mechatronics Engineer",
-      // logo: ParabolLogo,
       start: "2020",
       end: "2024",
-      description:
-        "Lead product design engineer in an ASX listed technology company. Design, prototyping, and manufacturing of plastic and electrical parts. Simulation of PV systems. PCB design and layout, embedded programming of a full IoT system.",
+      description: `
+<div>Lead design engineer for the "Version 2" ClearVue PV Solar Integrated Glazing Units, Spandrels, and Cladding including:</div>
+<div style="margin-left: 1.5em">
+    <div style="text-indent: -1em; padding-left: 1em">• Reduced manufacturing time from >1hr per unit to sub 5 minutes</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Optimized electrical subsystems and layout</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Design, testing, optimization, and mass manufacturing of plastic and metal parts</div>
+</div>
+
+<div>Continue development and improve stability of "Smart Facade" prototypes developed at Arup:</div>
+<div style="margin-left: 1.5em">
+    <div style="text-indent: -1em; padding-left: 1em">• Design and fabricate a miniaturized MPPT charge controller to suit the ClearVue PV panel including PCB design and layout, embedded programming and full IoT system</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Improve stability and efficiency of power and control electronics for prototypes</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Miniaturize components and design for SMT manufacturing</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Improved reliability and featureset of control electronics</div>
+</div>
+
+<div>Design of a Building Management System for a "Smart" greenhouse using IoT components</div>`,
     },
     {
       company: "Arup",
@@ -62,8 +76,14 @@ export const RESUME_DATA = {
       // logo: ClevertechLogo,
       start: "2019",
       end: "2020",
-      description:
-        "Research, design, development and construction of prototypes for ClearVue PV. Development of reinforcement learning building control system",
+      description: `
+<div>Research, design, development and construction of a series of "Smart Facade" prototypes for ClearVue PV, which included:</div>
+<div style="margin-left: 1.5em">
+    <div style="text-indent: -1em; padding-left: 1em">• Design and construction of electrical power systems using a transparent photovoltaic panel</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Design and construction of a web interface for wireless control</div>
+    <div style="text-indent: -1em; padding-left: 1em">• Programming of microcontrollers for sensing and control of the prototype hardware</div>
+    <div style="text-indent: -1em; padding-left: 1em">• The development and testing of a Reinforcement Learning based facade control system to minimize building energy use</div>
+</div>`,
     },
     {
       company: "Fulcrum 3D",
@@ -108,4 +128,8 @@ export const RESUME_DATA = {
       },
     },
   ],
+    references: {
+    text: "References available upon request",
+    show: true, // Toggle to control visibility
+  },
 } as const;
